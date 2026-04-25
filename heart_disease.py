@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-model=joblib.load(r"C:\Users\l480\OneDrive\Desktop\ML Work\heart_disease.pkl")
-expected_cols=joblib.load(r"C:\Users\l480\OneDrive\Desktop\ML Work\columns.pkl")
+model = joblib.load("heart_disease.pkl")
+expected_cols=joblib.load("columns.pkl")
 st.title("❤️ Heart Disease Prediction App")
 st.markdown("Provide patient details:")
 age = st.number_input("Age",18,100,40)
