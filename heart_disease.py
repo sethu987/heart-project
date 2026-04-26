@@ -14,7 +14,7 @@ cholesterol = st.number_input("Cholesterol(mg/dL)",100,600,200)
 fasting_bs = st.selectbox("Fasting Blood Sugar >120mg/dL", [0, 1])
 resting_ecg=st.selectbox("Resting ECG",["Normal","ST","LVH"])
 max_hr = st.slider("Max Heart Rate",60,220,150)
-exercise_angina = st.selectbox("Exercise Angina", ["Y","N"])
+exercise_angina = st.selectbox("Exercise Angina", ["Yes","No"])
 oldpeak = st.slider("Oldpeak (ST depression)",0.0,6.0,1.0)
 St_slope=st.selectbox("ST Slope",['Up', 'Flat', 'Down'])
 
