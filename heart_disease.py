@@ -4,7 +4,7 @@ import joblib
 
 model = joblib.load("heart_disease.pkl")
 expected_cols=joblib.load("columns.pkl")
-st.title("❤️ Heart Disease Prediction App")
+st.title("Heart Disease Predictor")
 st.markdown("Provide patient details:")
 age = st.number_input("Age",18,100,40)
 sex = st.selectbox("Sex", ['M','F'])
